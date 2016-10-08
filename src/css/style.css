@@ -1,0 +1,117 @@
+.mountainSquare
+{
+  background-color: red;
+  background-image: url("../images/mountain.png");
+}
+
+.shallowOceanSquare
+{
+  background-color: blue;
+  background-image: url("../images/shallowocean.png");
+}
+
+.deepOceanSquare
+{
+  background-color: darkBlue;
+  background-image: url("../images/deepocean.png");
+}
+
+.icePlainsSquare
+{
+  background-color: lightBlue;
+  background-image: url("../images/iceplains.png");
+}
+
+.snowMountainSquare
+{
+  background-color: lightBlue;
+  background-image: url("../images/snowmountain.png");
+}
+
+.meadowSquare
+{
+  background-color: green;
+  background-image: url("../images/meadow.png");
+}
+
+.forestSquare
+{
+  background-color: darkGreen;
+  background-image: url("../images/forest.png");
+}
+
+.decForestSquare
+{
+  background-color: darkGreen;
+  background-image: url("../images/forest2.png");
+}
+
+.jungleSquare
+{
+  background-color: darkGreen;
+  background-image: url("../images/jungle.png");
+}
+
+.woodedMountainSquare
+{
+  background-color: darkGreen;
+  background-image: url("../images/woodedmountain.png");
+}
+
+.beachSquare
+{
+  background-color: yellow;
+  background-image: url("../images/beach.png");
+}
+
+.desertSquare
+{
+  background-color: yellow;
+  background-image: url("../images/desert.png");
+}
+
+.termitesSquare
+{
+  background-color: yellow;
+  background-image: url("../images/termites.png");
+}
+
+.swampSquare
+{
+  background-color: purple;
+  background-image: url("../images/swamp.png");
+}
+
+.mapRow span
+{
+  padding: 0px;
+  height: 30px;
+  width: 30px;
+  border:none;
+  display:inline-block;
+  margin:0px;
+  outline:none;
+  text-align: center;
+  color: orange;
+  text-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*Get rid of outline when div focus is on added by tabindex - needed to enable ng-keypress on div*/
+:focus
+{
+  outline: none;
+}
+
+.mapWrapper
+{
+  white-space: nowrap;
+}
+
+.floatingNav
+{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}

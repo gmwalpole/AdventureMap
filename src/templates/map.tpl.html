@@ -1,0 +1,12 @@
+<div tabindex="0" ng-keypress="move($event.keyCode);" ng-keyup="release;" class="mapWrapper">
+<!--button ng-click="move('N');">^</button>
+<button ng-click="move('S');">V</button>
+<button ng-click="move('W');">&lt;</button>
+<button ng-click="move('E');">&gt;</button-->
+<!--ng-keypress ng-keypress="alert($event.keyCode);"-->
+<div ng-repeat="row in mapInfo track by $index" class="mapRow">
+  <input type="hidden" value="{{$scope.rowNum = $index}}">
+  <span ng-repeat="tile in row track by $index" ng-class="{{'\''+tile+'Square\''}}"><span ng-show="$scope.rowNum == playerLoc[0] && $index == playerLoc[1]"><img src="./images/advent.png"></span><span ng-show="$scope.rowNum != playerLoc[0] || $index != playerLoc[1]">&nbsp;</span></span>
+</div>
+<!--/ng-keypress-->
+</div>
